@@ -19,7 +19,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/bg.jpg") top right no-repeat;
+  background: #040404 url("../img/bk/red-bg.png") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -35,12 +35,12 @@ body::before {
 }
 
 a {
-  color: #18d26e;
+  color: #414042;
   text-decoration: none;
 }
 
 a:hover {
-  color: #35e888;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header h2 span {
   color: #fff;
-  border-bottom: 2px solid #18d26e;
+  border-bottom: 2px solid #fff;
   padding-bottom: 6px;
 }
 
@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .social-links a:hover {
-  background: #18d26e;
+  background: #4140427a;
 }
 
 @media (max-width: 992px) {
@@ -175,6 +175,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+
+#page-logo{
+  width: 85%;
+  padding-bottom: 25px !important;
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -221,18 +227,18 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 5px;
 }
 
-.navbar a:before {
+/*.navbar a:before {
   content: "";
   position: absolute;
   width: 0;
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #18d26e;
+  background-color: #414042;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
-}
+}*/
 
 .navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
   visibility: visible;
@@ -334,7 +340,13 @@ section.section-show {
 }
 
 section .container {
-  background: rgba(0, 0, 0, 0.9);
+  /*background: rgba(0, 0, 0, 0.9);*/
+  background: rgba( 0, 0, 0, 0.85 );
+  box-shadow: 0 8px 32px 0 rgba(135, 43, 31, 0.37);
+  backdrop-filter: blur( 6.0px );
+  -webkit-backdrop-filter: blur( 6.0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
   padding: 30px;
 }
 
@@ -384,7 +396,7 @@ section .container {
 .about-me .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #18d26e;
+  color: #414042;
 }
 
 .about-me .content ul {
@@ -436,7 +448,7 @@ section .container {
   font-size: 24px;
   background: rgba(255, 255, 255, 0.1);
   padding: 12px;
-  color: #18d26e;
+  color: #414042;
   border-radius: 50px;
   line-height: 0;
 }
@@ -1156,10 +1168,22 @@ section .container {
 }
 
 .credits a {
-  color: #18d26e;
+  color: #fff;
   transition: 0.3s;
 }
 
 .credits a:hover {
-  color: #fff;
+  color: #414042;
 }
+
+@media (max-width: 540px) {
+   #site-info{
+     background: rgba( 0, 0, 0, 0.85 );
+     box-shadow: 0 8px 32px 0 #dc35454d;
+     backdrop-filter: blur( 6.0px );
+     -webkit-backdrop-filter: blur( 6.0px );
+     border-radius: 10px;
+     border: 1px solid rgba( 255, 255, 255, 0.18 );
+     padding: 5rem 1rem;
+   }
+  }
